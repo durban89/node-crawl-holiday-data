@@ -16,7 +16,7 @@ const mysql = require('mysql');
 program
   .version('0.0.2')
   .option('-d, --date [date]', 'YYYY年M月')
-  .option('-f, --config [config]', 'YYYY年M月')
+  .option('-f, --config [config]', 'mysql config path')
   .parse(process.argv);
 
 debug('program.date = ', program.date);
@@ -100,7 +100,7 @@ request(url, function(error, response, body) {
   for (let i in days) {
     let saveData = {
       date_str: days[i],
-      thedate: days[i].replace(/-/ig, ''),
+      thedate: moment(days[i], 'YYYY-M-D').format('YYYYMMDD'),
       is_holiday: 0,
       is_holiday_work: 0,
       is_trade_day: 1
