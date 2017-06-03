@@ -1,6 +1,6 @@
 {
   "name": "crawl_holiday_data",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "crawl holiday data",
   "main": "index.js",
   "scripts": {
