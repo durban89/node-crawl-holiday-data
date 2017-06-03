@@ -1,0 +1,27 @@
+{
+  "name": "crawl_holiday_data",
+  "version": "1.0.0",
+  "description": "crawl holiday data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "crawl_holiday_data": "./index.js"
+  },
+  "keywords": [
+    "crawl",
+    "holiday",
+    "data"
+  ],
+  "author": "durban.zhang <durban.zhang@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "debug": "^2.6.8",
+    "knex": "^0.13.0",
+    "moment": "^2.18.1",
+    "mysql": "^2.13.0",
+    "request": "^2.81.0"
+  }
+}
