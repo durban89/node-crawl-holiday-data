@@ -14,7 +14,7 @@ const program = require('commander');
 const mysql = require('mysql');
 
 program
-  .version('0.0.1')
+  .version('0.0.2')
   .option('-d, --date [date]', 'YYYY年M月')
   .option('-f, --config [config]', 'YYYY年M月')
   .parse(process.argv);
