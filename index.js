@@ -99,7 +99,7 @@ request(url, function(error, response, body) {
   let saveDatas = [];
   for (let i in days) {
     let saveData = {
-      date_str: days[i],
+      date_str: moment(days[i], 'YYYY-M-D').format('YYYY-MM-DD'),
       thedate: moment(days[i], 'YYYY-M-D').format('YYYYMMDD'),
       is_holiday: 0,
       is_holiday_work: 0,
