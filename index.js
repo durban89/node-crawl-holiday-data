@@ -1,3 +1,9 @@
+#!/usr/bin/env node
+
+/**
+ * crawl holiday data
+ */
+
 'use strict';
 
 const request = require('request');
